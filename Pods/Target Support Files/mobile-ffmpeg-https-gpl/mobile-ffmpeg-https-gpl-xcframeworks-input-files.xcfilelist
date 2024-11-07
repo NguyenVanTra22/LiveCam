@@ -1,0 +1,17 @@
+${PODS_ROOT}/Target Support Files/mobile-ffmpeg-https-gpl/mobile-ffmpeg-https-gpl-xcframeworks.sh
+${PODS_ROOT}/mobile-ffmpeg-https-gpl/mobileffmpeg.xcframework
+${PODS_ROOT}/mobile-ffmpeg-https-gpl/libavcodec.xcframework
+${PODS_ROOT}/mobile-ffmpeg-https-gpl/libavdevice.xcframework
+${PODS_ROOT}/mobile-ffmpeg-https-gpl/libavfilter.xcframework
+${PODS_ROOT}/mobile-ffmpeg-https-gpl/libavformat.xcframework
+${PODS_ROOT}/mobile-ffmpeg-https-gpl/libavutil.xcframework
+${PODS_ROOT}/mobile-ffmpeg-https-gpl/libswresample.xcframework
+${PODS_ROOT}/mobile-ffmpeg-https-gpl/libswscale.xcframework
+${PODS_ROOT}/mobile-ffmpeg-https-gpl/gmp.xcframework
+${PODS_ROOT}/mobile-ffmpeg-https-gpl/gnutls.xcframework
+${PODS_ROOT}/mobile-ffmpeg-https-gpl/libhogweed.xcframework
+${PODS_ROOT}/mobile-ffmpeg-https-gpl/libnettle.xcframework
+${PODS_ROOT}/mobile-ffmpeg-https-gpl/libvidstab.xcframework
+${PODS_ROOT}/mobile-ffmpeg-https-gpl/x264.xcframework
+${PODS_ROOT}/mobile-ffmpeg-https-gpl/x265.xcframework
+${PODS_ROOT}/mobile-ffmpeg-https-gpl/xvidcore.xcframework

@@ -1,0 +1,1003 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		38092D8DA0D4DCCF3F08F9D3 /* Pods_LiveCam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 309B9CB33F024EAAD3E328E7 /* Pods_LiveCam.framework */; };
+		E8138E532CDA012E00AD5B4F /* ListDevicesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8138E522CDA012E00AD5B4F /* ListDevicesModel.swift */; };
+		E8138E562CDA015300AD5B4F /* ListDevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8138E542CDA015300AD5B4F /* ListDevicesViewController.swift */; };
+		E8138E572CDA015300AD5B4F /* ListDevicesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8138E552CDA015300AD5B4F /* ListDevicesViewController.xib */; };
+		E8138E5A2CDA036B00AD5B4F /* DeviceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8138E582CDA036A00AD5B4F /* DeviceTableViewCell.swift */; };
+		E8138E5B2CDA036B00AD5B4F /* DeviceTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8138E592CDA036A00AD5B4F /* DeviceTableViewCell.xib */; };
+		E87756D42CC8EF540027943B /* FFmpegSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87756D02CC8EF540027943B /* FFmpegSession.swift */; };
+		E87756D52CC8EF540027943B /* FFmpegService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87756D12CC8EF540027943B /* FFmpegService.swift */; };
+		E87756D62CC8EF540027943B /* FFmpegService+Delegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87756D22CC8EF540027943B /* FFmpegService+Delegate.swift */; };
+		E87756F02CC8F1190027943B /* KHJCameraLib in Frameworks */ = {isa = PBXBuildFile; fileRef = E87756EE2CC8F1190027943B /* KHJCameraLib */; };
+		E87756F12CC8F1FB0027943B /* KHJCameraLib in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E87756EE2CC8F1190027943B /* KHJCameraLib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		E87756F52CCA254C0027943B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87756F32CCA254C0027943B /* HomeViewController.swift */; };
+		E87756F62CCA254C0027943B /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E87756F42CCA254C0027943B /* HomeViewController.xib */; };
+		E87756FA2CCA25FB0027943B /* OHCamViewport.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87756F82CCA25FA0027943B /* OHCamViewport.swift */; };
+		E87756FB2CCA25FB0027943B /* OHCamViewport.xib in Resources */ = {isa = PBXBuildFile; fileRef = E87756F92CCA25FA0027943B /* OHCamViewport.xib */; };
+		E87757002CCA270A0027943B /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87756FF2CCA27090027943B /* CameraManager.swift */; };
+		E87757022CCA27D70027943B /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87757012CCA27D70027943B /* Constant.swift */; };
+		E87757062CCA28420027943B /* OHEventTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87757042CCA28420027943B /* OHEventTracking.swift */; };
+		E87757072CCA28420027943B /* OHEventTracking+Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87757052CCA28420027943B /* OHEventTracking+Const.swift */; };
+		E877571A2CCA41D70027943B /* libcamsdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E87757102CCA41D70027943B /* libcamsdk.a */; };
+		E877571B2CCA41D70027943B /* libPPCS_API.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E87757112CCA41D70027943B /* libPPCS_API.a */; };
+		E877571C2CCA41D70027943B /* OHCamSDKApi.mm in Sources */ = {isa = PBXBuildFile; fileRef = E87757142CCA41D70027943B /* OHCamSDKApi.mm */; };
+		E877571D2CCA41D70027943B /* OHCamSDKApi_v2.mm in Sources */ = {isa = PBXBuildFile; fileRef = E87757182CCA41D70027943B /* OHCamSDKApi_v2.mm */; };
+		E877571E2CCA44290027943B /* KHJCameraLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E87756FC2CCA26AD0027943B /* KHJCameraLib.framework */; };
+		E877571F2CCA44290027943B /* KHJCameraLib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E87756FC2CCA26AD0027943B /* KHJCameraLib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E87757302CCB8BE50027943B /* AudioPlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E877572F2CCB8BE50027943B /* AudioPlay.swift */; };
+		E87757322CCF74DA0027943B /* CoreMediaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87757312CCF74DA0027943B /* CoreMediaService.swift */; };
+		E87757362CD4D3AA0027943B /* LoginOHViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E87757342CD4D3AA0027943B /* LoginOHViewController.swift */; };
+		E87757372CD4D3AA0027943B /* LoginOHViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E87757352CD4D3AA0027943B /* LoginOHViewController.xib */; };
+		E8F5AD712CC2604100132CDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F5AD702CC2604100132CDA /* AppDelegate.swift */; };
+		E8F5AD732CC2604100132CDA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F5AD722CC2604100132CDA /* SceneDelegate.swift */; };
+		E8F5AD752CC2604100132CDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F5AD742CC2604100132CDA /* ViewController.swift */; };
+		E8F5AD782CC2604100132CDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8F5AD762CC2604100132CDA /* Main.storyboard */; };
+		E8F5AD7A2CC2604300132CDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8F5AD792CC2604300132CDA /* Assets.xcassets */; };
+		E8F5AD7D2CC2604300132CDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8F5AD7B2CC2604300132CDA /* LaunchScreen.storyboard */; };
+		E8F5AD882CC2604400132CDA /* LiveCamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F5AD872CC2604400132CDA /* LiveCamTests.swift */; };
+		E8F5AD922CC2604400132CDA /* LiveCamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F5AD912CC2604400132CDA /* LiveCamUITests.swift */; };
+		E8F5AD942CC2604400132CDA /* LiveCamUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F5AD932CC2604400132CDA /* LiveCamUITestsLaunchTests.swift */; };
+		E8F5ADBD2CC7876500132CDA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8F5ADBB2CC7876500132CDA /* LoginViewController.swift */; };
+		E8F5ADBE2CC7876500132CDA /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E8F5ADBC2CC7876500132CDA /* LoginViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E8F5AD842CC2604400132CDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8F5AD652CC2604100132CDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8F5AD6C2CC2604100132CDA;
+			remoteInfo = LiveCam;
+		};
+		E8F5AD8E2CC2604400132CDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8F5AD652CC2604100132CDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8F5AD6C2CC2604100132CDA;
+			remoteInfo = LiveCam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E8F5B2F92CC7A6E000132CDA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E87756F12CC8F1FB0027943B /* KHJCameraLib in Embed Frameworks */,
+				E877571F2CCA44290027943B /* KHJCameraLib.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		309B9CB33F024EAAD3E328E7 /* Pods_LiveCam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LiveCam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		81025B82C497C56743F156D2 /* Pods-LiveCam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveCam.debug.xcconfig"; path = "Target Support Files/Pods-LiveCam/Pods-LiveCam.debug.xcconfig"; sourceTree = "<group>"; };
+		E47015BC321012169095B12D /* Pods-LiveCam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LiveCam.release.xcconfig"; path = "Target Support Files/Pods-LiveCam/Pods-LiveCam.release.xcconfig"; sourceTree = "<group>"; };
+		E8138E522CDA012E00AD5B4F /* ListDevicesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDevicesModel.swift; sourceTree = "<group>"; };
+		E8138E542CDA015300AD5B4F /* ListDevicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDevicesViewController.swift; sourceTree = "<group>"; };
+		E8138E552CDA015300AD5B4F /* ListDevicesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListDevicesViewController.xib; sourceTree = "<group>"; };
+		E8138E582CDA036A00AD5B4F /* DeviceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceTableViewCell.swift; sourceTree = "<group>"; };
+		E8138E592CDA036A00AD5B4F /* DeviceTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeviceTableViewCell.xib; sourceTree = "<group>"; };
+		E87756D02CC8EF540027943B /* FFmpegSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFmpegSession.swift; sourceTree = "<group>"; };
+		E87756D12CC8EF540027943B /* FFmpegService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FFmpegService.swift; sourceTree = "<group>"; };
+		E87756D22CC8EF540027943B /* FFmpegService+Delegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FFmpegService+Delegate.swift"; sourceTree = "<group>"; };
+		E87756E72CC8F0C30027943B /* KHJVideoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHJVideoModel.h; sourceTree = "<group>"; };
+		E87756E82CC8F0C30027943B /* TimeInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeInfo.h; sourceTree = "<group>"; };
+		E87756E92CC8F0C30027943B /* OpenGLView20.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenGLView20.h; sourceTree = "<group>"; };
+		E87756EA2CC8F0C30027943B /* KHJCameraLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHJCameraLib.h; sourceTree = "<group>"; };
+		E87756EB2CC8F0C30027943B /* KHJDeviceManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KHJDeviceManager.h; sourceTree = "<group>"; };
+		E87756EC2CC8F0F10027943B /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		E87756EE2CC8F1190027943B /* KHJCameraLib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = KHJCameraLib; sourceTree = "<group>"; };
+		E87756F32CCA254C0027943B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		E87756F42CCA254C0027943B /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		E87756F82CCA25FA0027943B /* OHCamViewport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OHCamViewport.swift; sourceTree = "<group>"; };
+		E87756F92CCA25FA0027943B /* OHCamViewport.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OHCamViewport.xib; sourceTree = "<group>"; };
+		E87756FC2CCA26AD0027943B /* KHJCameraLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KHJCameraLib.framework; path = ../../Downloads/OneHomeClone/OneHomeClone/Library/OHCamService/KHJCameraLib.framework; sourceTree = "<group>"; };
+		E87756FF2CCA27090027943B /* CameraManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		E87757012CCA27D70027943B /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		E87757042CCA28420027943B /* OHEventTracking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OHEventTracking.swift; sourceTree = "<group>"; };
+		E87757052CCA28420027943B /* OHEventTracking+Const.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OHEventTracking+Const.swift"; sourceTree = "<group>"; };
+		E877570A2CCA41D70027943B /* sdk_define.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sdk_define.h; sourceTree = "<group>"; };
+		E877570B2CCA41D70027943B /* SdkApiInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SdkApiInterface.h; sourceTree = "<group>"; };
+		E877570C2CCA41D70027943B /* sdk_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sdk_api.h; sourceTree = "<group>"; };
+		E877570D2CCA41D70027943B /* sdk_version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sdk_version.h; sourceTree = "<group>"; };
+		E877570E2CCA41D70027943B /* sdk_git_revision.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sdk_git_revision.h; sourceTree = "<group>"; };
+		E87757102CCA41D70027943B /* libcamsdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libcamsdk.a; sourceTree = "<group>"; };
+		E87757112CCA41D70027943B /* libPPCS_API.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libPPCS_API.a; sourceTree = "<group>"; };
+		E87757142CCA41D70027943B /* OHCamSDKApi.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OHCamSDKApi.mm; sourceTree = "<group>"; };
+		E87757152CCA41D70027943B /* OHCamSDKApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHCamSDKApi.h; sourceTree = "<group>"; };
+		E87757172CCA41D70027943B /* OHCamSDKApi_v2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OHCamSDKApi_v2.h; sourceTree = "<group>"; };
+		E87757182CCA41D70027943B /* OHCamSDKApi_v2.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OHCamSDKApi_v2.mm; sourceTree = "<group>"; };
+		E87757192CCA41D70027943B /* OneHome-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OneHome-Bridging-Header.h"; sourceTree = "<group>"; };
+		E877572F2CCB8BE50027943B /* AudioPlay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlay.swift; sourceTree = "<group>"; };
+		E87757312CCF74DA0027943B /* CoreMediaService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreMediaService.swift; sourceTree = "<group>"; };
+		E87757342CD4D3AA0027943B /* LoginOHViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginOHViewController.swift; sourceTree = "<group>"; };
+		E87757352CD4D3AA0027943B /* LoginOHViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginOHViewController.xib; sourceTree = "<group>"; };
+		E8F5AD6D2CC2604100132CDA /* LiveCam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveCam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8F5AD702CC2604100132CDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E8F5AD722CC2604100132CDA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E8F5AD742CC2604100132CDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E8F5AD772CC2604100132CDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E8F5AD792CC2604300132CDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8F5AD7C2CC2604300132CDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E8F5AD7E2CC2604300132CDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8F5AD832CC2604400132CDA /* LiveCamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveCamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8F5AD872CC2604400132CDA /* LiveCamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCamTests.swift; sourceTree = "<group>"; };
+		E8F5AD8D2CC2604400132CDA /* LiveCamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LiveCamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8F5AD912CC2604400132CDA /* LiveCamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCamUITests.swift; sourceTree = "<group>"; };
+		E8F5AD932CC2604400132CDA /* LiveCamUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveCamUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E8F5ADBB2CC7876500132CDA /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E8F5ADBC2CC7876500132CDA /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		E8F5B2F52CC7A6BD00132CDA /* libPPCS_API.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPPCS_API.a; path = ../../Downloads/OHCam/lib/libPPCS_API.a; sourceTree = "<group>"; };
+		E8F5B2F62CC7A6BE00132CDA /* libcamsdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcamsdk.a; path = ../../Downloads/OHCam/lib/libcamsdk.a; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8F5AD6A2CC2604100132CDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E877571A2CCA41D70027943B /* libcamsdk.a in Frameworks */,
+				E877571B2CCA41D70027943B /* libPPCS_API.a in Frameworks */,
+				38092D8DA0D4DCCF3F08F9D3 /* Pods_LiveCam.framework in Frameworks */,
+				E877571E2CCA44290027943B /* KHJCameraLib.framework in Frameworks */,
+				E87756F02CC8F1190027943B /* KHJCameraLib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8F5AD802CC2604400132CDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8F5AD8A2CC2604400132CDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A43DEED454C4CB7C2EC612FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81025B82C497C56743F156D2 /* Pods-LiveCam.debug.xcconfig */,
+				E47015BC321012169095B12D /* Pods-LiveCam.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E8138E512CDA00CC00AD5B4F /* ListDevices */ = {
+			isa = PBXGroup;
+			children = (
+				E8138E522CDA012E00AD5B4F /* ListDevicesModel.swift */,
+				E8138E542CDA015300AD5B4F /* ListDevicesViewController.swift */,
+				E8138E552CDA015300AD5B4F /* ListDevicesViewController.xib */,
+				E8138E582CDA036A00AD5B4F /* DeviceTableViewCell.swift */,
+				E8138E592CDA036A00AD5B4F /* DeviceTableViewCell.xib */,
+			);
+			path = ListDevices;
+			sourceTree = "<group>";
+		};
+		E87756CE2CC8EF540027943B /* OHCamService */ = {
+			isa = PBXGroup;
+			children = (
+				E87756D82CC8EFAD0027943B /* KHJCameraLib.framework */,
+				E87756CF2CC8EF540027943B /* FFmpegService */,
+			);
+			path = OHCamService;
+			sourceTree = "<group>";
+		};
+		E87756CF2CC8EF540027943B /* FFmpegService */ = {
+			isa = PBXGroup;
+			children = (
+				E87756D02CC8EF540027943B /* FFmpegSession.swift */,
+				E87756D12CC8EF540027943B /* FFmpegService.swift */,
+				E87756D22CC8EF540027943B /* FFmpegService+Delegate.swift */,
+			);
+			path = FFmpegService;
+			sourceTree = "<group>";
+		};
+		E87756D82CC8EFAD0027943B /* KHJCameraLib.framework */ = {
+			isa = PBXGroup;
+			children = (
+				E87756EE2CC8F1190027943B /* KHJCameraLib */,
+				E87756DB2CC8F07F0027943B /* Headers */,
+				E87756E12CC8F07F0027943B /* Modules */,
+			);
+			path = KHJCameraLib.framework;
+			sourceTree = "<group>";
+		};
+		E87756DB2CC8F07F0027943B /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				E87756EA2CC8F0C30027943B /* KHJCameraLib.h */,
+				E87756EB2CC8F0C30027943B /* KHJDeviceManager.h */,
+				E87756E72CC8F0C30027943B /* KHJVideoModel.h */,
+				E87756E92CC8F0C30027943B /* OpenGLView20.h */,
+				E87756E82CC8F0C30027943B /* TimeInfo.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		E87756E12CC8F07F0027943B /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				E87756EC2CC8F0F10027943B /* module.modulemap */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		E87756F22CCA25230027943B /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				E87756F32CCA254C0027943B /* HomeViewController.swift */,
+				E87756F42CCA254C0027943B /* HomeViewController.xib */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		E87756F72CCA25FA0027943B /* OHCamViewport */ = {
+			isa = PBXGroup;
+			children = (
+				E87756F82CCA25FA0027943B /* OHCamViewport.swift */,
+				E87756F92CCA25FA0027943B /* OHCamViewport.xib */,
+			);
+			path = OHCamViewport;
+			sourceTree = "<group>";
+		};
+		E87757032CCA28420027943B /* EventTracking */ = {
+			isa = PBXGroup;
+			children = (
+				E87757042CCA28420027943B /* OHEventTracking.swift */,
+				E87757052CCA28420027943B /* OHEventTracking+Const.swift */,
+			);
+			path = EventTracking;
+			sourceTree = "<group>";
+		};
+		E87757082CCA41D70027943B /* OHCam */ = {
+			isa = PBXGroup;
+			children = (
+				E87757092CCA41D70027943B /* include */,
+				E877570F2CCA41D70027943B /* lib */,
+				E87757122CCA41D70027943B /* API */,
+				E87757192CCA41D70027943B /* OneHome-Bridging-Header.h */,
+			);
+			path = OHCam;
+			sourceTree = "<group>";
+		};
+		E87757092CCA41D70027943B /* include */ = {
+			isa = PBXGroup;
+			children = (
+				E877570A2CCA41D70027943B /* sdk_define.h */,
+				E877570B2CCA41D70027943B /* SdkApiInterface.h */,
+				E877570C2CCA41D70027943B /* sdk_api.h */,
+				E877570D2CCA41D70027943B /* sdk_version.h */,
+				E877570E2CCA41D70027943B /* sdk_git_revision.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		E877570F2CCA41D70027943B /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				E87757102CCA41D70027943B /* libcamsdk.a */,
+				E87757112CCA41D70027943B /* libPPCS_API.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		E87757122CCA41D70027943B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				E87757132CCA41D70027943B /* v1 */,
+				E87757162CCA41D70027943B /* v2 */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		E87757132CCA41D70027943B /* v1 */ = {
+			isa = PBXGroup;
+			children = (
+				E87757142CCA41D70027943B /* OHCamSDKApi.mm */,
+				E87757152CCA41D70027943B /* OHCamSDKApi.h */,
+			);
+			path = v1;
+			sourceTree = "<group>";
+		};
+		E87757162CCA41D70027943B /* v2 */ = {
+			isa = PBXGroup;
+			children = (
+				E87757172CCA41D70027943B /* OHCamSDKApi_v2.h */,
+				E87757182CCA41D70027943B /* OHCamSDKApi_v2.mm */,
+			);
+			path = v2;
+			sourceTree = "<group>";
+		};
+		E87757332CD4D3350027943B /* LoginOH */ = {
+			isa = PBXGroup;
+			children = (
+				E87757342CD4D3AA0027943B /* LoginOHViewController.swift */,
+				E87757352CD4D3AA0027943B /* LoginOHViewController.xib */,
+			);
+			path = LoginOH;
+			sourceTree = "<group>";
+		};
+		E8F5AD642CC2604100132CDA = {
+			isa = PBXGroup;
+			children = (
+				E8F5AD6F2CC2604100132CDA /* LiveCam */,
+				E8F5AD862CC2604400132CDA /* LiveCamTests */,
+				E8F5AD902CC2604400132CDA /* LiveCamUITests */,
+				E8F5AD6E2CC2604100132CDA /* Products */,
+				E8F5ADA02CC266CF00132CDA /* Frameworks */,
+				A43DEED454C4CB7C2EC612FB /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		E8F5AD6E2CC2604100132CDA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8F5AD6D2CC2604100132CDA /* LiveCam.app */,
+				E8F5AD832CC2604400132CDA /* LiveCamTests.xctest */,
+				E8F5AD8D2CC2604400132CDA /* LiveCamUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8F5AD6F2CC2604100132CDA /* LiveCam */ = {
+			isa = PBXGroup;
+			children = (
+				E8138E512CDA00CC00AD5B4F /* ListDevices */,
+				E87757332CD4D3350027943B /* LoginOH */,
+				E87757312CCF74DA0027943B /* CoreMediaService.swift */,
+				E87757082CCA41D70027943B /* OHCam */,
+				E87757032CCA28420027943B /* EventTracking */,
+				E87757012CCA27D70027943B /* Constant.swift */,
+				E87756FF2CCA27090027943B /* CameraManager.swift */,
+				E87756F72CCA25FA0027943B /* OHCamViewport */,
+				E87756F22CCA25230027943B /* HomeView */,
+				E87756CE2CC8EF540027943B /* OHCamService */,
+				E8F5ADBA2CC7874200132CDA /* LoginCam */,
+				E8F5AD702CC2604100132CDA /* AppDelegate.swift */,
+				E8F5AD722CC2604100132CDA /* SceneDelegate.swift */,
+				E8F5AD742CC2604100132CDA /* ViewController.swift */,
+				E8F5AD762CC2604100132CDA /* Main.storyboard */,
+				E8F5AD792CC2604300132CDA /* Assets.xcassets */,
+				E8F5AD7B2CC2604300132CDA /* LaunchScreen.storyboard */,
+				E8F5AD7E2CC2604300132CDA /* Info.plist */,
+				E877572F2CCB8BE50027943B /* AudioPlay.swift */,
+			);
+			path = LiveCam;
+			sourceTree = "<group>";
+		};
+		E8F5AD862CC2604400132CDA /* LiveCamTests */ = {
+			isa = PBXGroup;
+			children = (
+				E8F5AD872CC2604400132CDA /* LiveCamTests.swift */,
+			);
+			path = LiveCamTests;
+			sourceTree = "<group>";
+		};
+		E8F5AD902CC2604400132CDA /* LiveCamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E8F5AD912CC2604400132CDA /* LiveCamUITests.swift */,
+				E8F5AD932CC2604400132CDA /* LiveCamUITestsLaunchTests.swift */,
+			);
+			path = LiveCamUITests;
+			sourceTree = "<group>";
+		};
+		E8F5ADA02CC266CF00132CDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E87756FC2CCA26AD0027943B /* KHJCameraLib.framework */,
+				E8F5B2F62CC7A6BE00132CDA /* libcamsdk.a */,
+				E8F5B2F52CC7A6BD00132CDA /* libPPCS_API.a */,
+				309B9CB33F024EAAD3E328E7 /* Pods_LiveCam.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8F5ADBA2CC7874200132CDA /* LoginCam */ = {
+			isa = PBXGroup;
+			children = (
+				E8F5ADBB2CC7876500132CDA /* LoginViewController.swift */,
+				E8F5ADBC2CC7876500132CDA /* LoginViewController.xib */,
+			);
+			path = LoginCam;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8F5AD6C2CC2604100132CDA /* LiveCam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8F5AD972CC2604400132CDA /* Build configuration list for PBXNativeTarget "LiveCam" */;
+			buildPhases = (
+				2460924248F05A0A225CC7C8 /* [CP] Check Pods Manifest.lock */,
+				E8F5AD692CC2604100132CDA /* Sources */,
+				E8F5AD6A2CC2604100132CDA /* Frameworks */,
+				E8F5AD6B2CC2604100132CDA /* Resources */,
+				DC7397C0E7B842C59B5A01C8 /* [CP] Embed Pods Frameworks */,
+				E8F5B2F92CC7A6E000132CDA /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiveCam;
+			productName = LiveCam;
+			productReference = E8F5AD6D2CC2604100132CDA /* LiveCam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E8F5AD822CC2604400132CDA /* LiveCamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8F5AD9A2CC2604400132CDA /* Build configuration list for PBXNativeTarget "LiveCamTests" */;
+			buildPhases = (
+				E8F5AD7F2CC2604400132CDA /* Sources */,
+				E8F5AD802CC2604400132CDA /* Frameworks */,
+				E8F5AD812CC2604400132CDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8F5AD852CC2604400132CDA /* PBXTargetDependency */,
+			);
+			name = LiveCamTests;
+			productName = LiveCamTests;
+			productReference = E8F5AD832CC2604400132CDA /* LiveCamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E8F5AD8C2CC2604400132CDA /* LiveCamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8F5AD9D2CC2604400132CDA /* Build configuration list for PBXNativeTarget "LiveCamUITests" */;
+			buildPhases = (
+				E8F5AD892CC2604400132CDA /* Sources */,
+				E8F5AD8A2CC2604400132CDA /* Frameworks */,
+				E8F5AD8B2CC2604400132CDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8F5AD8F2CC2604400132CDA /* PBXTargetDependency */,
+			);
+			name = LiveCamUITests;
+			productName = LiveCamUITests;
+			productReference = E8F5AD8D2CC2604400132CDA /* LiveCamUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8F5AD652CC2604100132CDA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					E8F5AD6C2CC2604100132CDA = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					E8F5AD822CC2604400132CDA = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = E8F5AD6C2CC2604100132CDA;
+					};
+					E8F5AD8C2CC2604400132CDA = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = E8F5AD6C2CC2604100132CDA;
+					};
+				};
+			};
+			buildConfigurationList = E8F5AD682CC2604100132CDA /* Build configuration list for PBXProject "LiveCam" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8F5AD642CC2604100132CDA;
+			productRefGroup = E8F5AD6E2CC2604100132CDA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8F5AD6C2CC2604100132CDA /* LiveCam */,
+				E8F5AD822CC2604400132CDA /* LiveCamTests */,
+				E8F5AD8C2CC2604400132CDA /* LiveCamUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8F5AD6B2CC2604100132CDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E87756FB2CCA25FB0027943B /* OHCamViewport.xib in Resources */,
+				E8138E5B2CDA036B00AD5B4F /* DeviceTableViewCell.xib in Resources */,
+				E8F5ADBE2CC7876500132CDA /* LoginViewController.xib in Resources */,
+				E8F5AD7D2CC2604300132CDA /* LaunchScreen.storyboard in Resources */,
+				E8F5AD7A2CC2604300132CDA /* Assets.xcassets in Resources */,
+				E8138E572CDA015300AD5B4F /* ListDevicesViewController.xib in Resources */,
+				E8F5AD782CC2604100132CDA /* Main.storyboard in Resources */,
+				E87757372CD4D3AA0027943B /* LoginOHViewController.xib in Resources */,
+				E87756F62CCA254C0027943B /* HomeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8F5AD812CC2604400132CDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8F5AD8B2CC2604400132CDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2460924248F05A0A225CC7C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LiveCam-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC7397C0E7B842C59B5A01C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LiveCam/Pods-LiveCam-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LiveCam/Pods-LiveCam-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LiveCam/Pods-LiveCam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8F5AD692CC2604100132CDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8138E562CDA015300AD5B4F /* ListDevicesViewController.swift in Sources */,
+				E87757072CCA28420027943B /* OHEventTracking+Const.swift in Sources */,
+				E87756FA2CCA25FB0027943B /* OHCamViewport.swift in Sources */,
+				E87757302CCB8BE50027943B /* AudioPlay.swift in Sources */,
+				E87757322CCF74DA0027943B /* CoreMediaService.swift in Sources */,
+				E87756D62CC8EF540027943B /* FFmpegService+Delegate.swift in Sources */,
+				E87756D42CC8EF540027943B /* FFmpegSession.swift in Sources */,
+				E8F5ADBD2CC7876500132CDA /* LoginViewController.swift in Sources */,
+				E87757362CD4D3AA0027943B /* LoginOHViewController.swift in Sources */,
+				E87757062CCA28420027943B /* OHEventTracking.swift in Sources */,
+				E877571C2CCA41D70027943B /* OHCamSDKApi.mm in Sources */,
+				E87757002CCA270A0027943B /* CameraManager.swift in Sources */,
+				E87756F52CCA254C0027943B /* HomeViewController.swift in Sources */,
+				E8138E5A2CDA036B00AD5B4F /* DeviceTableViewCell.swift in Sources */,
+				E87756D52CC8EF540027943B /* FFmpegService.swift in Sources */,
+				E8F5AD752CC2604100132CDA /* ViewController.swift in Sources */,
+				E877571D2CCA41D70027943B /* OHCamSDKApi_v2.mm in Sources */,
+				E87757022CCA27D70027943B /* Constant.swift in Sources */,
+				E8F5AD712CC2604100132CDA /* AppDelegate.swift in Sources */,
+				E8138E532CDA012E00AD5B4F /* ListDevicesModel.swift in Sources */,
+				E8F5AD732CC2604100132CDA /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8F5AD7F2CC2604400132CDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8F5AD882CC2604400132CDA /* LiveCamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8F5AD892CC2604400132CDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8F5AD942CC2604400132CDA /* LiveCamUITestsLaunchTests.swift in Sources */,
+				E8F5AD922CC2604400132CDA /* LiveCamUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8F5AD852CC2604400132CDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8F5AD6C2CC2604100132CDA /* LiveCam */;
+			targetProxy = E8F5AD842CC2604400132CDA /* PBXContainerItemProxy */;
+		};
+		E8F5AD8F2CC2604400132CDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8F5AD6C2CC2604100132CDA /* LiveCam */;
+			targetProxy = E8F5AD8E2CC2604400132CDA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E8F5AD762CC2604100132CDA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8F5AD772CC2604100132CDA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E8F5AD7B2CC2604300132CDA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8F5AD7C2CC2604300132CDA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E8F5AD952CC2604400132CDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E8F5AD962CC2604400132CDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8F5AD982CC2604400132CDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81025B82C497C56743F156D2 /* Pods-LiveCam.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 55J964B372;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LiveCam/OHCamService",
+					/Users/developer1/Desktop/LiveCam/LiveCam/OHCam,
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiveCam/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "$(PRODUCT_NAME) Muốn truy cập Micro";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LiveCam/OHCamService/KHJCameraLib.framework",
+					"$(PROJECT_DIR)/LiveCam/OHCam/lib",
+					/Users/developer1/Desktop/LiveCam/LiveCam/OHCam/lib,
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VNPT.LiveCam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/developer1/Desktop/LiveCam/LiveCam/OHCam/OneHome-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8F5AD992CC2604400132CDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E47015BC321012169095B12D /* Pods-LiveCam.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 55J964B372;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LiveCam/OHCamService",
+					/Users/developer1/Desktop/LiveCam/LiveCam/OHCam,
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiveCam/Info.plist;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "$(PRODUCT_NAME) Muốn truy cập Micro";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LiveCam/OHCamService/KHJCameraLib.framework",
+					"$(PROJECT_DIR)/LiveCam/OHCam/lib",
+					/Users/developer1/Desktop/LiveCam/LiveCam/OHCam/lib,
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VNPT.LiveCam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/developer1/Desktop/LiveCam/LiveCam/OHCam/OneHome-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E8F5AD9B2CC2604400132CDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 55J964B372;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VNPT.LiveCamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiveCam.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LiveCam";
+			};
+			name = Debug;
+		};
+		E8F5AD9C2CC2604400132CDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 55J964B372;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VNPT.LiveCamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LiveCam.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/LiveCam";
+			};
+			name = Release;
+		};
+		E8F5AD9E2CC2604400132CDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 55J964B372;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VNPT.LiveCamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LiveCam;
+			};
+			name = Debug;
+		};
+		E8F5AD9F2CC2604400132CDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 55J964B372;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = VNPT.LiveCamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LiveCam;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8F5AD682CC2604100132CDA /* Build configuration list for PBXProject "LiveCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8F5AD952CC2604400132CDA /* Debug */,
+				E8F5AD962CC2604400132CDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8F5AD972CC2604400132CDA /* Build configuration list for PBXNativeTarget "LiveCam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8F5AD982CC2604400132CDA /* Debug */,
+				E8F5AD992CC2604400132CDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8F5AD9A2CC2604400132CDA /* Build configuration list for PBXNativeTarget "LiveCamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8F5AD9B2CC2604400132CDA /* Debug */,
+				E8F5AD9C2CC2604400132CDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8F5AD9D2CC2604400132CDA /* Build configuration list for PBXNativeTarget "LiveCamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8F5AD9E2CC2604400132CDA /* Debug */,
+				E8F5AD9F2CC2604400132CDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8F5AD652CC2604100132CDA /* Project object */;
+}

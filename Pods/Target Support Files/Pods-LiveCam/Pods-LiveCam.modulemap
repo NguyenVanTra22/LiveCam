@@ -1,0 +1,6 @@
+framework module Pods_LiveCam {
+  umbrella header "Pods-LiveCam-umbrella.h"
+
+  export *
+  module * { export * }
+}
